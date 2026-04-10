@@ -13,7 +13,7 @@ body{
 }
 
 .container{
-  max-width:1000px;
+  max-width:1100px;
   margin:auto;
   padding:20px;
 }
@@ -21,12 +21,38 @@ body{
 h1{
   text-align:center;
   color:#4b5b4b;
+  margin-bottom:30px;
 }
 
-img{
+.logo{
+  display:block;
+  margin:0 auto 30px;
+  width:200px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  border-radius:15px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  overflow:hidden;
+}
+
+.card img{
   width:100%;
-  border-radius:10px;
-  margin:20px 0;
+  height:250px;
+  object-fit:cover;
+}
+
+.card h3{
+  text-align:center;
+  padding:15px;
+  color:#4b5b4b;
 }
 </style>
 
@@ -38,31 +64,51 @@ img{
 
 <h1>Pausa Libre - Desconexión Consciente</h1>
 
-<img src="imagen/LOGO.jpeg">
+<img src="imagen/logo.jpeg" class="logo">
 
-<h2>Recepción</h2>
-<img src="imagen/RECEPCIÓN 1.jpeg">
+<div class="grid">
 
-<h2>Cabina de Masajes</h2>
-<img src="imagen/CABINA MASAJES.jpeg">
+<div class="card">
+<img src="imagen/recepcion1.jpeg">
+<h3>Recepción</h3>
+</div>
 
-<h2>Sala de Masajes</h2>
-<img src="imagen/SALA MASAJES.jpeg">
+<div class="card">
+<img src="imagen/cabina_masajes.jpeg">
+<h3>Cabina de Masajes</h3>
+</div>
 
-<h2>Sala de Masajes 2</h2>
-<img src="imagen/SALA MASAJES 2.jpeg">
+<div class="card">
+<img src="imagen/sala_masajes.jpeg">
+<h3>Sala de Masajes</h3>
+</div>
 
-<h2>Zona de Desconexión</h2>
-<img src="imagen/ZONA DESCONEXIÓN.jpeg">
+<div class="card">
+<img src="imagen/sala_masajes2.jpeg">
+<h3>Sala de Masajes 2</h3>
+</div>
 
-<h2>Cabina de Relajación</h2>
-<img src="imagen/CABAÑA RELAJACIÓN.jpeg">
+<div class="card">
+<img src="imagen/zona_desconexion.jpeg">
+<h3>Zona de Desconexión</h3>
+</div>
 
-<h2>Sala Psicología</h2>
-<img src="imagen/SALA PSCOLOGIA.jpeg">
+<div class="card">
+<img src="imagen/cabana_relajacion.jpeg">
+<h3>Cabina de Relajación</h3>
+</div>
 
-<h2>Terapia</h2>
-<img src="imagen/TERAPIA.jpeg">
+<div class="card">
+<img src="imagen/sala_psicologia.jpeg">
+<h3>Sala de Psicología</h3>
+</div>
+
+<div class="card">
+<img src="imagen/terapia.jpeg">
+<h3>Terapia</h3>
+</div>
+
+</div>
 
 </div>
 
